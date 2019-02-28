@@ -1,0 +1,36 @@
+{
+  "name": "@everymundo/lambda-load-balancer-helper",
+  "version": "0.0.0",
+  "description": "Functions to help lambda functions responding to load balancer requests",
+  "main": "index.js",
+  "scripts": {
+    "cover": "nyc -x test --reporter=lcov --reporter=text mocha --recursive",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-lint": "eslint *.js lib/*.js test/*.js",
+    "fix-lint": "eslint --fix *.js lib/*.js test/*.js",
+    "open-report": "coverage/lcov-report/index.html ./coverage/lcov-report/index.html",
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EveryMundo/lambda-load-balancer-helper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EveryMundo/lambda-load-balancer-helper/issues"
+  },
+  "homepage": "https://github.com/EveryMundo/lambda-load-balancer-helper#readme",
+  "devDependencies": {
+    "@everymundo/cleanrequire": "^1.1.1",
+    "aws-sdk": "^2.411.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "sinon": "^7.2.5"
+  }
+}
