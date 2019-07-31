@@ -1,6 +1,6 @@
 {
   "name": "@everymundo/lambda-load-balancer-helper",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Functions to help lambda functions responding to load balancer requests",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "test": "mocha --recursive"
   },
   "standard": {
-    "env": ["mocha"]
+    "env": [
+      "mocha"
+    ]
   },
   "repository": {
     "type": "git",
